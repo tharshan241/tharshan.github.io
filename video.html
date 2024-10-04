@@ -1,0 +1,66 @@
+<html></html>
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>About Me Video</h1>
+        <video width="360" height="220" controls poster="on_record.png" autoplay loop muted id="myvid">
+            <source src="Image3.mp4" type="video/mp4">
+            <source src="Image3.mp4" type="video/ogg">
+        </video>
+        <br>
+        <button onclick="PlayPause()">Play/Pause Button</button>
+        <script>
+            var mybtn=document.getElementById("myvid");
+            function PlayPause()
+            {
+                if(mybtn.paused)
+                    mybtn.play();
+                else
+                    mybtn.pause();
+            }
+
+        </script>
+        <style>
+            button{
+                background-color: rgb(219, 17, 17);
+                color: rgb(0, 0, 0);
+                height: 50px;
+                border: 2px rgb(245, 245, 245);
+                box-shadow: 10px 10px 5px black;
+                border-radius: 5px;
+            }
+            button:hover
+            {
+                background-color: rgba(12, 5, 5, 0.274);
+                color: black;
+                height: 50px;
+                border: 2px whitesmoke;
+                box-shadow: -10px -10px 5px black;
+                border-radius: 5px;
+            }
+        </style>
+        <main>
+            <section>
+                <h2>Script</h2>
+                <p>My name is Tharshan Manimohan and I am a second year at Ontario tech University. I am in the program Networking and IT security. I wish to have more fun in my second year</p>
+            </section>
+        </main>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="contactme.html">Contact Me</a>
+                <a href="video.html">Video</a>
+            </ul>
+        </nav>
+    </div>
+</p>
+For more informatation, Contact me at <a href="tharshan.manimohan@ontariotechu.net">tharshan.manimohan@ontariotechu.net</a>
+    <p>&copy; 2024 by Tharshan Manimohan</p>
+</body>
+</html>            
